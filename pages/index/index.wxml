@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="index-container">
+
+  <view class="index-map">
+    <map id="map" class="map" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}"
+      bindmarkertap="click_mark_tap" scale="19" show-compass show-location>
+    </map>
+    <view wx:if="{{map_init}}" class="index-icon index-location" bindtap="click_now_location">
+      <text class="iconfont icon-location"></text>
+    </view>
+    <!-- <view class="index-icon index-search" bindtap="click_search">
+      <text class="iconfont icon-search"></text>
+    </view> -->
+  </view>
+
+
+  <view class="index-list">
+    <component-list-item wx:for="{{landscapes}}" wx:key="item.name" landscape="{{item}}"
+      bind:click_list_item="click_list_item"></component-list-item>
+
+  </view>
+</view>

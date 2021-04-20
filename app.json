@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+
+    "pages/profile/profile",
+    "pages/welcome/welcome",
+    "pages/other/other",
+    "pages/landscape/lanscape",
+    "pages/user/comment/comment",
+    "pages/user/notification/notification",
+    "pages/user/edit/edit",
+    "pages/user/setting/setting"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#009999",
+    "navigationBarTitleText": "山大游览",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/other/other",
+      "text": "其他扩展"
+    }, {
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "关于"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

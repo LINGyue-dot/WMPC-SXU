@@ -1,0 +1,11 @@
+<view class="list-item" bindtap="click_list_item">
+  <view class="list-item-img">
+    <image src="{{landscape.img_url}}"></image>
+  </view>
+
+  <text>{{landscape.name}}</text>
+
+  <view class="list-item-link" catchtap="click_list_item_link">
+    <text class="iconfont icon-right"></text>
+  </view>
+</view>

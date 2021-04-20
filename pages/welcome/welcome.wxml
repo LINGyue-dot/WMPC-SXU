@@ -1,0 +1,4 @@
+<view class="enter-container">
+  <image class="enter-img" src="http://120.27.242.14:8080/img/enter.jpg"></image>
+  <button class="enter-btn" bindtap="welcome">进入山大</button>
+</view>

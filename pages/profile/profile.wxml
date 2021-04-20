@@ -1,0 +1,42 @@
+<view class="about-container">
+  <view class="about-bg">
+    <image src="{{user.background_img_url}}" alt=""></image>
+  </view>
+
+  <view class="about-user">
+    <view class="about-user-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <text class="about-user-name">{{user.name}}</text>
+    <text class="about-user-description">{{user.description}}</text>
+  </view>
+
+
+  <view class="about-info">
+
+  </view>
+
+  <view class="profile-row profile-link" bindtap="enter_comment">历史评论
+    <text class="iconfont icon-right"></text>
+  </view>
+  <view class="profile-row profile-link" bindtap="enetr_notification">最近消息
+    <text class="profile-tip">{{notification.number}}</text>
+    <text class="iconfont icon-right"></text>
+  </view>
+
+  <view class="profile-row profile-link" bindtap="enter_edit">修改个人信息
+    <text class="iconfont icon-right"></text>
+  </view>
+  <view class="profile-row profile-link" bindtap="enter_setting">设置
+    <text class="iconfont icon-right"></text>
+  </view>
+
+
+
+  <view class="profile-row logout">退出登入</view>
+
+
+
+
+
+</view>

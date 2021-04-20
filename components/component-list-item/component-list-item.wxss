@@ -1,0 +1,31 @@
+
+.list-item{
+  width: 100%;
+  padding: 20rpx 30rpx;
+  height: 160rpx;
+  line-height: 120rpx;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.list-item-img{
+  float: left;
+  width: 30%;
+  height: 100%;
+  overflow:hidden;
+  margin-right: 20rpx;
+}
+.list-item-img image{
+  object-fit: contain;
+}
+
+.list-item-link{
+  float: right;
+
+}
+
+.list-item-link text{  
+  font-size: 20px;
+  color: #009999;
+
+}

@@ -1,0 +1,21 @@
+.enter-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.enter-img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.enter-btn {
+  position: absolute;
+  right: 0;
+  bottom: 100rpx;
+  color: #fff;
+  background-color: #009999;
+  border-top-left-radius: 9999999px;
+  border-bottom-left-radius: 9999999px;
+}
