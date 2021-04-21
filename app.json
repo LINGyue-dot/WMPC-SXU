@@ -1,10 +1,9 @@
 {
   "pages": [
+    "pages/forum/forum",
     "pages/index/index",
-
-    "pages/profile/profile",
     "pages/welcome/welcome",
-    "pages/other/other",
+    "pages/profile/profile",
     "pages/landscape/lanscape",
     "pages/user/comment/comment",
     "pages/user/notification/notification",
@@ -20,8 +19,8 @@
   },
   "tabBar": {
     "list": [{
-      "pagePath": "pages/other/other",
-      "text": "其他扩展"
+      "pagePath": "pages/forum/forum",
+      "text": "论坛"
     }, {
       "pagePath": "pages/index/index",
       "text": "首页"

@@ -26,15 +26,17 @@ Component({
      * 跳转地图中心点
      */
     click_list_item(event) {
+      // detail对象，提供给事件监听函数
       var myEventDetail = {
         latitude: this.properties.landscape.location.latitude,
         longitude: this.properties.landscape.location.longitude
-      } // detail对象，提供给事件监听函数
+      } 
+      // 触发事件的选项
       var myEventOption = {
         bubbles: false,
         composed: false,
         capturePhase: false
-      } // 触发事件的选项
+      } 
       this.triggerEvent('click_list_item', myEventDetail, myEventOption)
     },
     /**

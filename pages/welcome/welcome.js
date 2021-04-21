@@ -27,7 +27,7 @@ Page({
   welcome() {
     var token = wx.getStorageSync('X-Token')
     if (token) {
-      // 有token 直接sign_in 
+    //   // 有token 直接sign_in 
       Tips.loading(true, '正在登入')
       sign_in().then((res)=>{
         Tips.loading(false)

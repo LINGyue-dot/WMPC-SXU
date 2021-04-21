@@ -1,0 +1,4 @@
+<scroll-view class="scroll-view" refresher-enabled="true" refresher-threshold="25" refresher-triggered="{{triggered}}"
+  bindrefresherrefresh="bind_refresh" >
+  <slot></slot>
+</scroll-view>

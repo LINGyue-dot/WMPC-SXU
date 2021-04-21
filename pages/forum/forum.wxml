@@ -1,0 +1,19 @@
+<view class="forum">
+
+  <view class="swiper-top">
+    <text class="swiper-title">吃喝</text>
+    <text class="swiper-title">玩乐</text>
+    <text class="swiper-title">服务</text>
+  </view>
+
+  <component-scroll-down-refresh bind:refresh_list="refresh_list"
+  triggered_father="{{triggered}}"
+  >
+    <swiper class="swiper" duration="300" bindchange="swiper_change">
+      <swiper-item class="swiper-item" item-id="1">
+      </swiper-item>
+      <swiper-item class="swiper-item" item-id="2">3434</swiper-item>
+      <swiper-item class="swiper-item" item-id="3">67</swiper-item>
+    </swiper>
+  </component-scroll-down-refresh>
+</view>

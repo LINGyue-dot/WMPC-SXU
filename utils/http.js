@@ -11,9 +11,7 @@ import UserOpeartion from './user_operation'
 
 const app = getApp()
 
-const {
-  refresh_token
-} = require('../api/user.js')
+
 
 
 export default class Http {
@@ -38,9 +36,11 @@ export default class Http {
         header: header,
         data: data ? data : {},
         success: res => {
-          if (res.data.token_valid === 'false') {
+
+          if (res.data.token_valid === false) {
+            console.log('asd')
             // token 过期就再次登入
-            handle_token_invalid()
+            this.handle_token_invalid()
 
           } else if (parseInt(res.data.code) !== 200) {
             // 获取失败
@@ -53,6 +53,7 @@ export default class Http {
 
         },
         fail: err => {
+          console.log(err)
           reject(err)
         }
       })
@@ -77,16 +78,26 @@ export default class Http {
   static handle_token_invalid() {
     wx.login({
       success: login_info => {
-        refresh_token(login_info).then(res => {
-          UserOpeartion.wx_to_index(res)
+        console.log(login_info)
+        // this.refresh_token(login_info).then(res => {
+        //   UserOpeartion.wx_to_index(res)
 
-        }).catch(err => {
-          Tips.error('重新登入失败')
-          console.log(err)
-        })
+        // }).catch(err => {
+        //   Tips.error('重新登入失败')
+        //   console.log(err)
+        // })
       }
     })
 
+  }
+
+  /**
+   * token过期 更新token 
+   */
+  static refresh_token(login_info) {
+    return this.get('/user/login', {
+      id: login_info.code
+    })
   }
 
 

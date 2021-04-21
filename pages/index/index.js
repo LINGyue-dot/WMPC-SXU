@@ -47,6 +47,7 @@ Page({
   onLoad() {
     this._get_loaction()
     get_landscape_list().then(res => {
+      console.log(res)
       // console.log(res.data.data.data)
       this.setData({
         markers: res.data.data.data.map(item => ({
@@ -59,7 +60,7 @@ Page({
         })),
         landscapes: res.data.data.data /**!!!!!!!!!!!!!!!!!!!!!!!!套娃啊 */
       })
-    })
+    }).catch(err=>console.log(err))
   },
   /**
    * 获取用户当前定位
@@ -116,6 +117,7 @@ Page({
 
   },
   /**
+   * 获取子组件传来的信息进行视角移动
    * 点击景观item 移动视角
    * @param {*} event 
    */

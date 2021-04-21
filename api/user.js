@@ -32,14 +32,7 @@ module.exports = {
   },
 
 
-  /**
-   * token过期 更新token 
-   */
-  refresh_token(login_info) {
-    return Http.get('/user/login', {
-      id: login_info.code
-    })
-  }
+
 
 
 

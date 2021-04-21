@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "component-scroll-down-refresh":"/components/component-scroll-down-refresh/component-scroll-down-refresh"
+  }
+}
