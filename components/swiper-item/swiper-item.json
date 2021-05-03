@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "scroll-down-refresh": "/components/scroll-down-refresh/scroll-down-refresh"
+  }
+}

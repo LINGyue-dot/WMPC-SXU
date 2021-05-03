@@ -26,15 +26,15 @@ Page({
    */
   welcome() {
     var token = wx.getStorageSync('X-Token')
-    if (token) {
+    // if (token) {
     //   // 有token 直接sign_in 
-      Tips.loading(true, '正在登入')
-      sign_in().then((res)=>{
-        Tips.loading(false)
-        UserOpeartion.back_to_index(res)
-        Tips.success('hello', Router.enter_index)
-      }).catch(err=>console.log(err))
-    } else {
+    //   Tips.loading(true, '正在登入')
+    //   sign_in().then((res)=>{
+    //     Tips.loading(false)
+    //     UserOpeartion.back_to_index(res)
+    //     Tips.success('hello', Router.enter_index)
+    //   }).catch(err=>console.log(err))
+    // } else {
       // 如果没有token 获取用户信息权限 并 sign_up 注册
 
       // 由于官方限制 需要先 getUserProfile 然后 wx.login
@@ -58,11 +58,8 @@ Page({
               }).catch(err => {
                 console.log(err)
               })
-
             }
           })
-
-
         },
         fail: err => {
           console.log(err)
@@ -71,7 +68,7 @@ Page({
         //}
 
       })
-    }
+    // }
 
 
 

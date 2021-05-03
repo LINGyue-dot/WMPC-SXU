@@ -1,19 +1,23 @@
 <view class="forum">
-
+qwe
   <view class="swiper-top">
-    <text class="swiper-title">吃喝</text>
+    <text class="swiper-title" bindtap="clickItem(1)">吃喝</text>
     <text class="swiper-title">玩乐</text>
     <text class="swiper-title">服务</text>
+    <view class="forum-select">
+      <picker bindchange="select_change" range="{{select_arr}}" value="{{select_value}}">
+        <text>{{select_arr[select_value]}}</text>
+      </picker>
+    </view>
   </view>
+<!-- 
+  <component-swiper-main distance="{{swiper_id}}">
+    <component-swiper-item wx:for="{{swiper_arr}}" select_value="{{select_value}}">
+    </component-swiper-item>
+  </component-swiper-main> -->
 
-  <component-scroll-down-refresh bind:refresh_list="refresh_list"
-  triggered_father="{{triggered}}"
-  >
-    <swiper class="swiper" duration="300" bindchange="swiper_change">
-      <swiper-item class="swiper-item" item-id="1">
-      </swiper-item>
-      <swiper-item class="swiper-item" item-id="2">3434</swiper-item>
-      <swiper-item class="swiper-item" item-id="3">67</swiper-item>
-    </swiper>
-  </component-scroll-down-refresh>
+  <!-- <swiper class="swiper" duration="300" bindchange="swiper_change">
+    <component-swiper-item wx:for="{{swiper_arr}}" 
+    item_id="{{index}}" select_value="{{select_value}}"></component-swiper-item>
+  </swiper> -->
 </view>

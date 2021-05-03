@@ -1,4 +1,4 @@
 <view class="enter-container">
-  <image class="enter-img" src="http://120.27.242.14:8080/img/enter.jpg"></image>
+  <image class="enter-img" src="https://www.google.com/logos/doodles/2021/us-teacher-appreciation-week-2021-begins-6753651837109219.5-s.png"></image>
   <button class="enter-btn" bindtap="welcome">进入山大</button>
 </view>

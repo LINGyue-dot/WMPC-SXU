@@ -45,9 +45,11 @@ Page({
     }]
   },
   onLoad() {
+    console.log(wx.getStorageSync('X-Token'))
     this._get_loaction()
     get_landscape_list().then(res => {
       console.log(res)
+      console.log('qqweqeqe')
       // console.log(res.data.data.data)
       this.setData({
         markers: res.data.data.data.map(item => ({

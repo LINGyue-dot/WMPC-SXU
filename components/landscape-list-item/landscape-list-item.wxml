@@ -1,6 +1,7 @@
 <view class="list-item" bindtap="click_list_item">
   <view class="list-item-img">
-    <image src="{{landscape.img_url}}"></image>
+    <!-- <image src="{{landscape.img_url}}"></image> -->
+    <image src="https://www.google.com/logos/doodles/2021/us-teacher-appreciation-week-2021-begins-6753651837109219.5-s.png" alt=""></image>
   </view>
 
   <text>{{landscape.name}}</text>

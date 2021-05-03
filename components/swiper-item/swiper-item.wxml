@@ -1,0 +1,5 @@
+<view class="ql-swiper-item" >
+  <component-scroll-down-refresh bindrefresh_list="refresh">
+    qweasd
+  </component-scroll-down-refresh>
+</view>

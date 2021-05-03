@@ -12,6 +12,7 @@
   height: 80rpx;
   line-height: 80rpx;
   background-color: #fff;
+  box-sizing: border-box;
   z-index:999;
 }
 
@@ -22,6 +23,12 @@
 
 .swiper-title-active{
   color: #009999;
+}
+
+.forum-select{
+  float: right;
+  height: 100%;
+  margin-right: 39rpx;
 }
 
 .scroll-view{

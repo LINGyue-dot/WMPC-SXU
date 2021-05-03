@@ -38,7 +38,6 @@ export default class Http {
         success: res => {
 
           if (res.data.token_valid === false) {
-            console.log('asd')
             // token 过期就再次登入
             this.handle_token_invalid()
 
@@ -79,13 +78,13 @@ export default class Http {
     wx.login({
       success: login_info => {
         console.log(login_info)
-        // this.refresh_token(login_info).then(res => {
-        //   UserOpeartion.wx_to_index(res)
+        this.refresh_token(login_info).then(res => {
+          UserOpeartion.wx_to_index(res)
 
-        // }).catch(err => {
-        //   Tips.error('重新登入失败')
-        //   console.log(err)
-        // })
+        }).catch(err => {
+          Tips.error('重新登入失败')
+          console.log(err)
+        })
       }
     })
 

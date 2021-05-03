@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "component-list-item": "/components/component-list-item/component-list-item"
+    "component-list-item": "/components/landscape-list-item/landscape-list-item"
   }
 }

@@ -30,13 +30,14 @@ Component({
       var myEventDetail = {
         latitude: this.properties.landscape.location.latitude,
         longitude: this.properties.landscape.location.longitude
-      } 
+      }
       // 触发事件的选项
       var myEventOption = {
         bubbles: false,
         composed: false,
         capturePhase: false
-      } 
+      }
+      // 传递给父组件
       this.triggerEvent('click_list_item', myEventDetail, myEventOption)
     },
     /**

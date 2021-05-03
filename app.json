@@ -1,15 +1,14 @@
 {
   "pages": [
     "pages/forum/forum",
-    "pages/index/index",
     "pages/welcome/welcome",
+    "pages/index/index",
     "pages/profile/profile",
     "pages/landscape/lanscape",
     "pages/user/comment/comment",
     "pages/user/notification/notification",
     "pages/user/edit/edit",
     "pages/user/setting/setting"
-
   ],
   "window": {
     "backgroundTextStyle": "light",

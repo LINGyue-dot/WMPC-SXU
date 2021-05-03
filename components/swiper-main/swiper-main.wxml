@@ -1,0 +1,5 @@
+<view class="ql-swiper" style="transform:translateX({{distance*-100}}%)">
+  <slot></slot>
+</view>
+
+<!-- 此组件并不独立 只能与swiper-item共同使用 -->

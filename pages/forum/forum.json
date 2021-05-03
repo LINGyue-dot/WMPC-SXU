@@ -1,5 +1,6 @@
 {
-  "usingComponents": {
-    "component-scroll-down-refresh":"/components/component-scroll-down-refresh/component-scroll-down-refresh"
+  "usingComponents":{
+    "component-swiper-item":"/components/swiper-item/swiper-item",
+    "component-swiper-main":"/components/swiper-main/swiper-main"
   }
 }

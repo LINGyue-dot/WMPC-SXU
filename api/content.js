@@ -17,7 +17,7 @@ module.exports = {
    * 获取景点列表
    */
   get_landscape_list() {
-    return Http.get('/landscape')
+    return Http.get('/scenario/landscape/all')
   },
 
 
@@ -26,8 +26,7 @@ module.exports = {
    * @param  {} landscape_id  景点id
    */
   get_lanscape_item(landscape_id) {
-    return Http.get('/landscape/' + landscape_id)
-
+    return Http.get('/scenario/landscape/' + landscape_id)
   },
 
 
@@ -35,8 +34,8 @@ module.exports = {
    * 获取某景点的评论列表
    * @param {*} dlandscape_id 景点id
    */
-  get_landscape_comment_list(dlandscape_id) {
-    return Http.get('/comment/landscape/' + landscape_id)
+  get_landscape_comment_list(landscape_id) {
+    return Http.get('/comment/scenario/' + landscape_id)
   },
 
 
